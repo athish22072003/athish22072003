@@ -1,30 +1,30 @@
 # Athish Vikraman
 
-Embedded firmware and FPGA design engineer. I build things on real hardware — not just simulation.
+Hardware validation and characterization engineer. I quantify hardware behavior at the bench — oscilloscope, DMM, bare-metal firmware, statistical methodology.
 
----
+## What I'm Building
 
-### What I've Built
+**STM32F446RE Platform Validation & PVT Characterization Campaign**
+Systematic validation campaign following semiconductor-industry PVT methodology. GPIO timing determinism (CV = 0.054% across N=20), power rail characterization (+0.27% accuracy on 3.3V LDO, 60 Hz mains EMI identified), communication bus signal integrity across voltage corners (2.8V–3.6V). All firmware is register-level C — no HAL. All measurements include sample count, mean, and standard deviation.
 
-**RV32IM Pipelined CPU + Systolic Array Coprocessor** — [View Repo](https://github.com/athish22072003/rv32im-systolic-coprocessor)
-5-stage pipelined RISC-V processor with a custom 4×4 INT8 systolic array coprocessor in SystemVerilog. Validated on real Zynq UltraScale+ silicon — 138 MHz, 4,777 LUTs, 36/36 tests, correct output on board LEDs.
+**Automated Validation & Regression Framework** — Repo coming soon
+Python-on-Linux framework with Poisson failure rate fitting, Weibull reliability modeling, chi-squared significance testing, anomaly detection, and automated HTML reporting.
 
-### What I'm Building
+## What I've Built
 
-**STM32 Multi-Sensor DAQ** — *Repo coming soon*
-Register-level I2C/SPI drivers on STM32F446RE, CAN bus via SN65HVD230, FreeRTOS with 4 concurrent tasks. No libraries. Datasheets and registers.
+**[RV32IM Pipelined CPU + Systolic Array Coprocessor](https://github.com/athish22072003/rv32im-systolic-coprocessor)**
+5-stage pipelined RISC-V processor with a custom 4×4 INT8 systolic array coprocessor in SystemVerilog. Hardware validated on Zynq UltraScale+ — 138 MHz, 4,777 LUTs, 36/36 tests passing.
 
----
+## Skills
 
-### Skills
-
-**Firmware:** C (bare-metal) · FreeRTOS · STM32 · ARM Cortex-M · ESP32 · 8051
+**Validation & Lab:** Oscilloscopes · DMMs · Logic Analyzers · PVT Characterization · Signal Integrity · Root-Cause Analysis · Statistical Analysis
+**Firmware:** C (bare-metal, register-level) · FreeRTOS · STM32 · ARM Cortex-M · ESP32
+**Automation:** Python · scipy.stats · pyserial · Linux · bash
 **HDL & FPGA:** SystemVerilog · Verilog · Xilinx Vivado · Zynq UltraScale+
-**Protocols:** I2C · SPI · UART · CAN · AXI4-Lite · MQTT
-**Debug:** Oscilloscopes · Logic Analyzers · Soldering
+**Protocols:** I2C · SPI · UART · CAN · AXI4-Lite
 
----
+## Seeking
 
-Seeking Fall 2026 co-op → Hardware · Embedded · FPGA · Firmware
+Fall 2026 co-op or full-time → Hardware Validation · Platform Validation · Characterization Engineering
 
-[LinkedIn](https://linkedin.com/in/athishvikraman) · [Portfolio](https://athish22072003.github.io)
+[LinkedIn](https://www.linkedin.com/in/athishvikraman) · [Portfolio](https://athishvikraman.com)
